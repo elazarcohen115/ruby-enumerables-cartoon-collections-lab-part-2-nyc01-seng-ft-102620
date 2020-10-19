@@ -22,9 +22,11 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  planeteer_calls.any? do |word|
-    valid_calls.each do |valid|
-      valid == word
+  planeteer_calls.each do |planateer|
+    valid_calls.each do |calls|
+      if planateer == calls
+        return planateer
+      end
     end
   end
 
