@@ -26,6 +26,8 @@ def find_valid_calls(planeteer_calls)
     valid_calls.each do |calls|
       if planateer == calls
         return planateer
+      else
+        return nil
       end
     end
   end
