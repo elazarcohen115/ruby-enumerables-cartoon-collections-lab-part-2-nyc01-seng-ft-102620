@@ -26,10 +26,9 @@ def find_valid_calls(planeteer_calls)
     valid_calls.each do |calls|
       if planateer == calls
         return planateer
-      else
-        return nil
       end
     end
+    return nil
   end
 
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
